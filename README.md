@@ -3,3 +3,4 @@
 #Emerson huamani lopez
 #YErson Rivera Quispe
 #Rony huamani anccna
+#Denis Pariona Jurado
