@@ -1,0 +1,14 @@
+{
+  "name": "login-register-form",
+  "version": "1.0.0",
+  "description": "Proyecto de formularios de inicio de sesión y registro con HTML y CSS",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
