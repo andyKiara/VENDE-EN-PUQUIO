@@ -215,3 +215,148 @@ body {
     color: #007BFF;
     font-weight: bold;
 }
+
+
+/* HOME */
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/*  encabezado */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.profile img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* carrusel */
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+/*categorías */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-button {
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icon-size {
+    width: 20px;
+    height: 20px;
+}
+
+/* popular */
+.popular {
+    padding: 20px;
+}
+
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.view-all {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+/* página */
+footer {
+    background-color: white;
+    padding: 10px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a {
+    display: inline-block;
+}
