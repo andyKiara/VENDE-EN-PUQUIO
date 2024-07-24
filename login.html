@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <form class="form" id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="login-email">
+                    <img src="user-icon.png" alt="user icon" class="icon">
+                </label>
+                <input type="email" id="login-email" placeholder="email@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="login-password">
+                    <img src="eye-icon.png" alt="eye icon" class="icon">
+                </label>
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="button login-button">Login</button>
+            <div class="or">or</div>
+            <button type="button" class="button facebook-button">Continue with Facebook</button>
+            <button type="button" class="button google-button">Continue with Google</button>
+            <div class="create-account">
+                Don't have an account? <a href="signup.html">Create now</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'home.html';
+        });
+    </script>
+</body>
+</html>
