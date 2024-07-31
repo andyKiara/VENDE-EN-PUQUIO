@@ -16,13 +16,13 @@
 - *Emprendedores:*
 ### *Integrantes*
 
-- *JHonny Edward Asto Atoccsa* JhonnyASTOatoccsa 
+- *JHonny Edward Asto Atoccsa*   -JhonnyASTOatoccsa 
 
-- *Emerson Huamani lopez*  emersonlopesh
+- *Emerson Huamani lopez*  -emersonlopesh
 
-- *Yerson Rivera Quispe*   yerson34
+- *Yerson Rivera Quispe*   -yerson34
 
-- *Rony Huamani anccana*
+- *Rony Huamani anccana*  -andyKiara
 
-- *Denis Pariona Jurado*   Denise0002
+- *Denis Pariona Jurado*   -Denise0002
   
