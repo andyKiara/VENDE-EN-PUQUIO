@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.k8sU7sgEyCu7KDNZKvkrqQHaHa&pid=Api&P=0&h=180'); /* URL de la imagen del corazón */
+            background-size: cover;
+            animation: float 1s ease-in-out forwards;
+        }
+
+        @keyframes float {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+    </style>
+    <script>
+        function showHearts(event) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = ${event.clientX}px;
+            heart.style.top = ${event.clientY}px;
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                document.body.removeChild(heart);
+            }, 1000);
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -14,7 +47,7 @@
             <button><img src="https://tse1.mm.bing.net/th?id=OIP.8Ye3rMWmKrcwVNqWx8IEjwHaHa&pid=Api&P=0&h=180" alt="Filter" class="icon-size"></button>
         </div>
         <div class="profile">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.zn-IHB2dEkJrI-spOHRJNAHaHa&pid=Api&P=0&h=180" alt="Cart" class="icon-size"></button>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.zn-IHB2dEkJrI-spOHRJNAHaHa&pid=Api&P=0&h=180" alt="Cart" class="icon-size">
             <img src="https://tse4.mm.bing.net/th?id=OIP.fX6G3g6AHCuKeT5SoRfhlgHaHF&pid=Api&P=0&h=180" alt="Profile" class="icon-size">
         </div>
     </header>
@@ -31,24 +64,23 @@
         <div class="popular">
             <h2>POPULAR</h2>
             <div class="products">
-
                 <div class="product">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.RaBBXgNOlR4d3hslAEosZQAAAA&pid=Api&P=0&h=180" alt="Product 2" class="product-img">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.RaBBXgNOlR4d3hslAEosZQAAAA&pid=Api&P=0&h=180" alt="Product 1" class="product-img">
                     <p>ZAPATILLA MAC</p>
                     <p>$400.00</p>
-                    <button>COMPRAR</button>
+                    <button onclick="showContactInfo()">COMPRAR</button>
                 </div>
                 <div class="product">
                     <img src="https://tse4.mm.bing.net/th?id=OIP.JYriuVLeEpcTNpGjWFTFBwHaHa&pid=Api&P=0&h=180" alt="Product 2" class="product-img">
                     <p>PHONE 14 MAX</p>
                     <p>$3000.00</p>
-                    <button>COMPRAR</button>
+                    <button onclick="showContactInfo()">COMPRAR</button>
                 </div>
                 <div class="product">
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.nGWtYWigtf0_KPRgxmxxygHaEK&pid=Api&P=0&h=180" alt="Product 2" class="product-img">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.nGWtYWigtf0_KPRgxmxxygHaEK&pid=Api&P=0&h=180" alt="Product 3" class="product-img">
                     <p>CHEVROLET 2021</p>
                     <p>$3000.00</p>
-                    <button>COMPRAR</button>
+                    <button onclick="showContactInfo()">COMPRAR</button>
                 </div>
                 <!-- More products -->
             </div>
@@ -57,7 +89,7 @@
     <footer>
         <nav>
             <button class="footer-button"><img src="https://tse4.mm.bing.net/th?id=OIP.WnK1vJs2BjGqyaFWdwdwiwHaHa&pid=Api&P=0&h=180" alt="Home" class="footer-icon"></button>
-            <button class="footer-button"><img src="https://tse1.mm.bing.net/th?id=OIP.k8sU7sgEyCu7KDNZKvkrqQHaHa&pid=Api&P=0&h=180" alt="Favorite" class="footer-icon"></button>
+            <button class="footer-button" onclick="showHearts(event)"><img src="https://tse1.mm.bing.net/th?id=OIP.k8sU7sgEyCu7KDNZKvkrqQHaHa&pid=Api&P=0&h=180" alt="Favorite" class="footer-icon"></button>
             <button class="footer-button"><img src="https://tse4.mm.bing.net/th?id=OIP.zn-IHB2dEkJrI-spOHRJNAHaHa&pid=Api&P=0&h=180" alt="Cart" class="footer-icon"></button>
             <button class="footer-button"><img src="https://tse1.mm.bing.net/th?id=OIP.tcUGsWhvsRJ-1j7Cue_lbAHaHa&pid=Api&P=0&h=180" alt="Message" class="footer-icon"></button>
         </nav>
